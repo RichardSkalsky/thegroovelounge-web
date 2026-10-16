@@ -396,6 +396,7 @@ def build(demo, out):
     w("about/index.html", about(site))
     w("newsletter/thanks/index.html", thanks(site))
     w("privacy/index.html", privacy(site))
+    w("privacy.html", privacy(site))      # adressen som står i Google-appens samtyckesskärm
     w("404.html", notfound(site))
     w("feed.xml", feed(site, shows))
     w("CNAME", site["domain"] + "\n")
