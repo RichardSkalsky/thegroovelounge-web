@@ -126,10 +126,31 @@ def signup(site):
 <div class="status" role="status"></div></div></section>"""
 
 
+def engraved_puck(size="min(420px,70vw)"):
+    """Den graverade guldpucken (designsystemet, komponenten Puck): THE GROOVE LOUNGE upptill, sloganen nertill."""
+    C = 150
+    def arc(r, top):
+        return f"M {C-r},{C} a {r},{r} 0 {'1,1' if top else '0,0'} {2*r},0"
+    def tp(pid, path, text, fs, ls):
+        return (f'<path id="{pid}" d="{path}" fill="none"/>'
+                f'<text font-family="Jost, Futura, sans-serif" font-size="{fs}" font-weight="600" letter-spacing="{ls}">'
+                f'<textPath href="#{pid}" startOffset="50%" text-anchor="middle">{text}</textPath></text>')
+    inner = tp("pk-top", arc(118, True), "THE GROOVE LOUNGE", 15, 5.5) + tp("pk-bot", arc(130, False), "EVERY RECORD HAS A STORY", 10, 3.6)
+    g = f'<defs><g id="pk-txt">{inner}</g></defs>'
+    layers = ('<use href="#pk-txt" fill="rgba(255,244,210,.55)" transform="translate(0,.8)"/>'
+              '<use href="#pk-txt" fill="rgba(36,24,4,.75)" transform="translate(0,-.56)"/>'
+              '<use href="#pk-txt" fill="#7a5c1c"/>')
+    return (f'<div role="img" aria-label="The Groove Lounge gold puck, engraved: Every record has a story" style="position:relative;width:{size};aspect-ratio:1;border-radius:50%;'
+            'background:conic-gradient(from 30deg,#7a5c1c,#f1dfa6 10%,#a8822f 22%,#6b4f16 38%,#c9a24a 52%,#f4e3b0 60%,#9c7a2c 72%,#6b4f16 86%,#7a5c1c);'
+            'box-shadow:inset 0 0 0 2px rgba(255,240,200,.35),inset 0 0 0 12px rgba(0,0,0,.12),0 24px 50px rgba(0,0,0,.45)">'
+            f'<svg viewBox="0 0 300 300" style="position:absolute;inset:0;width:100%;height:100%" aria-hidden="true">{g}{layers}'
+            '<circle cx="150" cy="150" r="16" fill="#0b2a21"/></svg></div>')
+
+
 def home_prelaunch(site):
     q = site["home_quote"]
     body = f"""<section class="section glow"><div class="wrap hero">
-<div style="display:flex;justify-content:center"><span class="puck" aria-hidden="true" style="width:min(420px,70vw);height:min(420px,70vw);box-shadow:inset 0 0 0 2px rgba(255,240,200,.35),inset 0 0 0 12px rgba(0,0,0,.12),0 24px 50px rgba(0,0,0,.45)"></span></div>
+<div style="display:flex;justify-content:center">{engraved_puck()}</div>
 <div class="meta">
 <div class="label">The Groove Lounge · with Simone</div>
 <h1 class="display">Every record has a <i>story.</i></h1>
