@@ -1,0 +1,61 @@
+{
+  "number": "004",
+  "slug": "the-crossing",
+  "title": "The Crossing",
+  "subtitle": "British Soul, 1977–1993",
+  "date": "2026-10-16",
+  "duration": "58 min",
+  "artists": [
+    "Delegation",
+    "Loose Ends",
+    "Imagination",
+    "Omar"
+  ],
+  "tags": [
+    "soul",
+    "80s",
+    "uk"
+  ],
+  "mixcloud_key": null,
+  "teaser": "How a sound crossed the Atlantic, found a home in London and came back changed.",
+  "description": "From Philadelphia and Detroit to the clubs of Soho and the bedrooms of Brixton, where a new kind of British soul was pressed in small runs and played until the grooves gave out.",
+  "quote": "A record can be pressed in Birmingham and still sound like *it was born in Philadelphia.*",
+  "question": "Which record carried *you* across a border?",
+  "tracklist": [
+    [
+      "Delegation",
+      "Oh Honey",
+      "1977"
+    ],
+    [
+      "Loose Ends",
+      "Hangin’ on a String",
+      "1985"
+    ],
+    [
+      "Imagination",
+      "Body Talk",
+      "1981"
+    ],
+    [
+      "Omar",
+      "There’s Nothing Like This",
+      "1990"
+    ],
+    [
+      "Soul II Soul",
+      "Keep On Movin’",
+      "1989"
+    ],
+    [
+      "Junior",
+      "Mama Used to Say",
+      "1982"
+    ]
+  ],
+  "placeholder": true,
+  "home_quote": {
+    "text": "A record can be pressed in Birmingham and still sound like *it was born in Philadelphia.*",
+    "context": "On Delegation, Oh Honey"
+  }
+}

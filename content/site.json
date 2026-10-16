@@ -1,0 +1,37 @@
+{
+  "name": "The Groove Lounge",
+  "domain": "thegroovelounge.com",
+  "base_url": "https://thegroovelounge.com",
+  "tagline": "Every record has a story.",
+  "description": "Soul, funk, disco and R&B, and the stories behind the records. A new show every week on Mixcloud, hosted by Simone.",
+  "email": "simone@thegroovelounge.com",
+  "mixcloud_user": "groovelounge",
+  "api_base": "",
+  "newsletter_action": "",
+  "socials": [
+    [
+      "Mixcloud",
+      "https://www.mixcloud.com/groovelounge/"
+    ],
+    [
+      "Instagram",
+      "https://www.instagram.com/groovesimone/"
+    ],
+    [
+      "Threads",
+      "https://www.threads.net/@groovesimone"
+    ],
+    [
+      "TikTok",
+      "https://www.tiktok.com/@groovesimone"
+    ],
+    [
+      "X",
+      "https://x.com/groovesimone"
+    ]
+  ],
+  "home_quote": {
+    "text": "Not the most beautiful. *The most important.*",
+    "source": "On Sam Cooke, A Change Is Gonna Come"
+  }
+}
