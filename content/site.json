@@ -6,7 +6,7 @@
   "description": "Soul, funk, disco and R&B, and the stories behind the records. A new show every week on Mixcloud, hosted by Simone.",
   "email": "simone@thegroovelounge.com",
   "mixcloud_user": "groovelounge",
-  "api_base": "",
+  "api_base": "https://tglapi9pxfl1kl-api.functions.fnc.fr-par.scw.cloud",
   "newsletter_action": "",
   "socials": [
     [
