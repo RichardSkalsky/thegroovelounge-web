@@ -160,3 +160,6 @@ footer.site .links div:first-child { color: var(--ivory); }
 .center-page { min-height: calc(100vh - 84px); display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 22px; text-align: center; padding: 80px var(--gutter); }
 .center-page .puck { width: 120px; height: 120px; }
 @media (max-width: 560px) { .label { letter-spacing: .26em; } }
+.tracks li.chapter { counter-increment: none; }
+.tracks li.chapter::before { content: "♪"; color: var(--gold-500); }
+.tracks li.chapter i { color: var(--parchment); }

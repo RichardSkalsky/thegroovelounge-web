@@ -227,7 +227,20 @@ def show_page(site, shows, i, demo):
     s = shows[i]
     prev = shows[i + 1] if i + 1 < len(shows) else None
     nxt = shows[i - 1] if i > 0 else None
-    tl = "".join(f"<li><span>{e(a)}</span><i>{e(t)}</i><span class=y>{e(y)}</span></li>" for a, t, y in s.get("tracklist", []))
+    def fmt(sec):
+        sec = int(sec or 0)
+        return f"{sec // 60}:{sec % 60:02d}"
+
+    def row(x):
+        # Nytt format: {"type": "track"|"chapter", "start": sek, "artist", "title", "year"}; gammalt: [artist, titel, år]
+        if isinstance(x, dict):
+            st = f'<span class=y data-start="{int(x.get("start") or 0)}">{fmt(x.get("start"))}</span>' if x.get("start") is not None else '<span class=y></span>'
+            if x.get("type") == "chapter":
+                return f'<li class="chapter"><span class="gold">Simone</span><i>{e(x.get("title", ""))}</i>{st}</li>'
+            return f'<li><span>{e(x.get("artist", ""))}</span><i>{e(x.get("title", ""))}</i>{st}</li>'
+        a, t, y = (list(x) + ["", "", ""])[:3]
+        return f"<li><span>{e(a)}</span><i>{e(t)}</i><span class=y>{e(y)}</span></li>"
+    tl = "".join(row(x) for x in s.get("tracklist", []))
     tracks = f"""<div style="display:flex;flex-direction:column;gap:22px"><div class="label">Tracklist</div><ol class="tracks">{tl}</ol>
 <div class="muted" style="font-size:14px">Full tracklist on Mixcloud.</div></div>""" if tl else ""
     quote = f"""<div style="display:flex;flex-direction:column;gap:22px"><div class="label">From the show</div>
