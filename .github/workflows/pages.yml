@@ -3,6 +3,8 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+  schedule:
+    - cron: "7 * * * *"   # varje timme: shower med publish_at dyker upp utan ny push
 permissions:
   contents: read
   pages: write

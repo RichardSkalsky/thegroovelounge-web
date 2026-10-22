@@ -2,7 +2,7 @@
 """Bygger thegroovelounge.com som statiska sidor från content/ till out/.
 
     python3 build.py            # skarp version: bara godkända lappar (content/letters/)
-    python3 build.py --demo     # med exempellappar (content/letters-demo/) för förhandsvisning
+    python3 build.py --demo     # med exempelshower (content/demo-shows/) och exempellappar (content/letters-demo/)
 
 Bara standardbiblioteket. Designen följer riktning A (Velvet) i Claude Design,
 canvasen "The Groove Lounge – riktningar", och designsystemet "The Groove Lounge".
@@ -19,9 +19,18 @@ def md(s):
     return re.sub(r"\*(.+?)\*", r"<i>\1</i>", e(s or ""))
 
 
-def load():
+def is_out(show, now):
+    """En show syns först när publish_at (UTC, t.ex. 2026-10-30T17:00:00Z) har passerat."""
+    at = show.get("publish_at")
+    return not at or dt.datetime.fromisoformat(at.replace("Z", "+00:00")) <= now
+
+
+def load(demo=False):
     site = json.loads((ROOT / "content/site.json").read_text(encoding="utf-8"))
-    shows = [json.loads(p.read_text(encoding="utf-8")) for p in (ROOT / "content/shows").glob("*.json")]
+    dirs = ["content/shows"] + (["content/demo-shows"] if demo else [])     # exemplen bara i förhandsvisningen
+    shows = [json.loads(p.read_text(encoding="utf-8")) for d in dirs for p in (ROOT / d).glob("*.json")]
+    now = dt.datetime.now(dt.timezone.utc)
+    shows = [s for s in shows if is_out(s, now)]
     shows.sort(key=lambda s: s["number"], reverse=True)
     return site, shows
 
@@ -401,9 +410,7 @@ def favicon():
 
 
 def build(demo, out):
-    site, shows = load()
-    if not demo:
-        shows = [x for x in shows if not x.get("placeholder")]
+    site, shows = load(demo)
     if out.exists():
         shutil.rmtree(out)
     out.mkdir(parents=True)
