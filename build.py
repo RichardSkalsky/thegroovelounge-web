@@ -252,7 +252,15 @@ def show_page(site, shows, i, demo):
                + "".join(f'<figure class="letter" style="margin:0"><p>“{e(l["text"])}”</p><figcaption class="caps" style="font-size:13px">{e(l["name"])}, {e(l["town"])}</figcaption></figure>' for l in ls)
                + "</div></div>") if ls else ("<div style='display:flex;flex-direction:column;gap:14px;margin-top:18px'><div class=label>Letters I’ve chosen</div>"
                "<div class=letter><p>No letters yet. <span class=gold>Be the first.</span></p><span class='caps' style='font-size:13px'>Write to me below, and I may share yours here.</span></div></div>")
-    question = s.get("question") or "Which record should I play next, and *why?*"
+    # Showens fråga är valfri (pausad 2026-10-22). Utan fråga: en allmän uppmaning att skriva.
+    if s.get("question"):
+        ask_label, ask_title = "This week I’m asking", s["question"]
+        ask_text = "Every show ends with a question. Leave me a note: a memory, a record I should play, or something I got wrong. I read every one. Some I share here, and some end up in a future show."
+        placeholder = "The record, the memory, the question…"
+    else:
+        ask_label, ask_title = "Your turn", "Which record should I play *next?*"
+        ask_text = "Tell me what you thought of the show, ask for a record, or share a memory it brought back. I read every note. Some I share here, and some find their way into a future show."
+        placeholder = "The record, the memory, your thoughts…"
     pn = ""
     if prev:
         pn += f'<a class="prevnext" href="/shows/{e(prev["slug"])}/"><img src="/static/covers/{e(prev["slug"])}.jpg" alt="" loading="lazy"><div><div class="label" style="font-size:12px">← Previous · No. {e(prev["number"])}</div><div class="display" style="font-size:26px">{e(prev["title"])}</div></div></a>'
@@ -274,16 +282,16 @@ def show_page(site, shows, i, demo):
 {mid}
 <section style="border-top:1px solid var(--hairline)"><div class="wrap band" style="padding-block:40px;border-top:0">{pn}<a class="caps" href="/shows/" style="color:var(--gold-500)">All shows</a></div></section>
 <section class="section deep" id="note"><div class="wrap two">
-<div class="prose"><div class="label">This week I’m asking</div>
-<h2 class="display" style="font-size:clamp(36px,4vw,50px)">{md(question)}</h2>
-<p>Every show ends with a question. Leave me a note: a memory, a record I should play, or something I got wrong. I read every one. Some I share here, and some end up in a future show.</p>
+<div class="prose"><div class="label">{ask_label}</div>
+<h2 class="display" style="font-size:clamp(36px,4vw,50px)">{md(ask_title)}</h2>
+<p>{ask_text}</p>
 {letters}</div>
 <form class="panel note" data-show="{e(s['number'])}" novalidate>
 <h3>Leave me <i class="gold">a note</i></h3>
 <div class="field"><span>How was the show?</span>{stars(s['number'], 'Your rating')}</div>
 <div class="pair"><label class="field"><span>First name</span><input name="name" autocomplete="given-name" maxlength="60"></label>
 <label class="field"><span>Where are you listening from?</span><input name="town" maxlength="80"></label></div>
-<label class="field"><span>Your note</span><textarea name="text" required maxlength="3000" placeholder="The record, the memory, the question…"></textarea></label>
+<label class="field"><span>Your note</span><textarea name="text" required maxlength="3000" placeholder="{placeholder}"></textarea></label>
 <label class="field"><span>Email (optional, only if you want a reply)</span><input type="email" name="email" autocomplete="email" maxlength="200"></label>
 <label class="hp">Leave empty <input name="website" tabindex="-1" autocomplete="off"></label>
 <label class="check"><input type="checkbox" name="consent"> You may quote my note and first name on this page or in a show.</label>
