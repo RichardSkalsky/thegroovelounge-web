@@ -320,7 +320,7 @@ def show_page(site, shows, i, demo):
                 image=f"/static/covers/{s['slug']}.jpg", path=f"/shows/{s['slug']}/")
 
 
-TAG_WORDS = {"uk": "UK", "us": "US", "rnb": "R&B", "dj": "DJ"}
+TAG_WORDS = {"uk": "UK", "us": "US", "rb": "R&B", "rnb": "R&B", "dj": "DJ"}
 
 
 def tag_name(t):
