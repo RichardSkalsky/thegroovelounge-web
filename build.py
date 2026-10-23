@@ -15,8 +15,8 @@ e = html.escape
 
 
 def kern(h):
-    """Bodoni Moda saknar kerning för W före gemen (Wa, We, Wo). Täpps till med .kw i site.css."""
-    return re.sub(r"W(?=[a-zà-ÿ])", '<span class="kw">W</span>', h)
+    """Bodoni Moda saknar kerning för W före gemen utan uppstapel (Wa, We, Wo, men inte Wh, Wi). Täpps till med .kw i site.css."""
+    return re.sub(r"W(?=[acegmnopqrsuvwxyzåäöéèêëóòôüú])", '<span class="kw">W</span>', h)
 
 
 def md(s):

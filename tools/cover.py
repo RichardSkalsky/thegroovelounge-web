@@ -15,8 +15,8 @@ CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
 
 
 def kern(h):
-    """Bodoni Moda saknar kerning för W före gemen (Wa, We, Wo). Samma rättning som kern() i build.py."""
-    return re.sub(r"W(?=[a-zà-ÿ])", '<span class="kw">W</span>', h)
+    """Bodoni Moda saknar kerning för W före gemen utan uppstapel (Wa, We, Wo, men inte Wh, Wi). Samma rättning som kern() i build.py."""
+    return re.sub(r"W(?=[acegmnopqrsuvwxyzåäöéèêëóòôüú])", '<span class="kw">W</span>', h)
 
 
 def artist_line(artists):
