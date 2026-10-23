@@ -232,6 +232,15 @@ def home(site, shows):
     return page(site, "The Groove Lounge · Every record has a story", body, path="/")
 
 
+def paragraphs(text):
+    """Beskrivningens stycken (tom rad emellan). Simones fasta signatur "— Simone" sist får en egen stil."""
+    out = []
+    for para in [x.strip() for x in (text or "").split("\n\n") if x.strip()]:
+        cls = ' class="sig"' if para.startswith("— ") and len(para) < 30 else ""
+        out.append(f"<p{cls}>{e(para).replace(chr(10), '<br>')}</p>")
+    return "".join(out)
+
+
 def title_md(t):
     w = t.split()
     return t if len(w) < 2 else " ".join(w[:-1]) + f" *{w[-1]}*"
@@ -290,7 +299,7 @@ def show_page(site, shows, i, demo):
 <div class="caps">{e(s['subtitle'])}{' · ' + e(s['duration']) if s.get('duration') else ''}</div>
 {player(site, s)}
 <div class="rate"><span class="caps" style="color:var(--ivory);font-size:13px">Rate this show</span>{stars(s['number'], 'Rate this show')}<span class="thanks muted">Your rating comes straight to me.</span></div>
-<p class="muted" style="margin:0;font-size:18px;line-height:1.75;max-width:640px">{e(s['teaser'])} {e(s.get('description', ''))}</p>
+<div class="desc"><p>{e(s['teaser'])}</p>{paragraphs(s.get('description', ''))}</div>
 <div class="btns"><a class="btn solid" href="{e(mixcloud)}">Open on Mixcloud</a><a class="btn" href="#note">Leave me a note</a></div>
 </div></div></section>
 {mid}
