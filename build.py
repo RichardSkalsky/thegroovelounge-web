@@ -320,15 +320,22 @@ def show_page(site, shows, i, demo):
                 image=f"/static/covers/{s['slug']}.jpg", path=f"/shows/{s['slug']}/")
 
 
+TAG_WORDS = {"uk": "UK", "us": "US", "rnb": "R&B", "dj": "DJ"}
+
+
+def tag_name(t):
+    """Mixclouds korta taggnamn (old-school, neo-soul, rnb) som läsbar text i arkivets filter."""
+    return " ".join(TAG_WORDS.get(w, w if w[:1].isdigit() else w.capitalize()) for w in t.split("-"))
+
+
 def archive(site, shows):
     tags = []
     for s in shows:
         for t in s.get("tags", []):
             if t not in tags:
                 tags.append(t)
-    names = {"uk": "UK", "rnb": "R&B", "70s": "70s", "80s": "80s", "90s": "90s"}
     chips = '<button type="button" data-tag="all" aria-pressed="true">All</button>' + "".join(
-        f'<button type="button" data-tag="{e(t)}" aria-pressed="false">{e(names.get(t, t.title()))}</button>' for t in tags)
+        f'<button type="button" data-tag="{e(t)}" aria-pressed="false">{e(tag_name(t))}</button>' for t in tags)
     body = f"""<section class="glow" style="padding-block:80px 56px"><div class="wrap" style="display:flex;flex-direction:column;gap:18px">
 <div class="label">The archive</div><h1 class="display" style="font-size:clamp(48px,6vw,72px)">All <i>shows</i></h1>
 <p class="muted" style="margin:0;max-width:640px;font-size:18px">Every show since No. 001, newest first. A new one every week.</p>
