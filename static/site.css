@@ -21,6 +21,7 @@ a:hover { color: var(--gold-300); }
 .label { font: 500 13px/1.4 var(--sans); letter-spacing: .4em; text-transform: uppercase; color: var(--gold-500); }
 .display { font-family: var(--display); font-weight: 600; font-variation-settings: "opsz" 28; line-height: 1.04; margin: 0; text-wrap: balance; }
 .display i, .gold { color: var(--gold-500); }
+.kw { letter-spacing: -.1em; }   /* W före gemen, se kern() i build.py */
 .lead { font: italic 400 clamp(20px, 2.2vw, 26px)/1.45 var(--display); }
 .muted { color: var(--parchment); }
 .caps { font-size: 14px; letter-spacing: .18em; text-transform: uppercase; color: var(--parchment); }

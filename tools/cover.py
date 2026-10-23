@@ -8,10 +8,20 @@ Användning:
 Mallen är en exakt kopia av komponenten BCover i Claude Design (canvasen
 "The Groove Lounge – riktningar") och AlbumCover i designsystemet. Ändra där först.
 """
-import argparse, html, json, os, pathlib, subprocess, tempfile
+import argparse, html, json, os, pathlib, re, subprocess, tempfile
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 CHROME = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+
+
+def kern(h):
+    """Bodoni Moda saknar kerning för W före gemen (Wa, We, Wo). Samma rättning som kern() i build.py."""
+    return re.sub(r"W(?=[a-zà-ÿ])", '<span class="kw">W</span>', h)
+
+
+def artist_line(artists):
+    """Raden bryts bara efter en punkt: hårda mellanslag inne i namnen och före varje ·."""
+    return html.escape("\u00a0· ".join(a.replace(" ", "\u00a0") for a in artists))
 
 
 def title_size(title):
@@ -37,13 +47,14 @@ html,body{{margin:0;background:#0b2a21}}body{{padding:20px}}
 .tb{{position:absolute;top:330px;bottom:100px;left:48px;right:48px;display:flex;flex-direction:column;align-items:center;gap:16px;text-align:center}}
 .t{{font-family:'Bodoni Moda',Didot,Georgia,serif;font-size:{title_size(show["title"])}px;font-weight:600;font-variation-settings:'opsz' 28;line-height:1.02;letter-spacing:-.01em;text-wrap:balance;color:#f3ecdc}}
 .t i{{color:#c9a24a}}
+.kw{{letter-spacing:-.1em}}
 .a{{max-width:440px;font-size:13px;font-weight:500;letter-spacing:.18em;line-height:1.7;text-transform:uppercase;text-wrap:balance;color:#c6bfa6}}
 .s{{position:absolute;bottom:44px;left:0;right:0;text-align:center;font-family:'Pinyon Script',cursive;font-size:40px;line-height:1;color:#c9a24a;transform:rotate(-3deg)}}
 .n{{position:absolute;bottom:50px;right:48px;font-size:11px;letter-spacing:.3em;text-transform:uppercase;color:#c6bfa6}}
 </style></head><body><div class="c">
 <div class="fo"></div><div class="fi"></div><div class="wm">The Groove Lounge</div>
 <img class="img" src="{image_uri}" alt="">
-<div class="tb"><div class="t">{e(" ".join(words))} <i>{e(last)}</i></div><div class="a">{e(" · ".join(show["artists"]))}</div></div>
+<div class="tb"><div class="t">{kern(e(" ".join(words)))} <i>{kern(e(last))}</i></div><div class="a">{artist_line(show["artists"])}</div></div>
 <div class="s">with Simone</div><div class="n">No. {e(show["number"])}</div>
 </div></body></html>"""
 

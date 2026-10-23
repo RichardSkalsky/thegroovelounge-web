@@ -14,9 +14,14 @@ ROOT = pathlib.Path(__file__).resolve().parent
 e = html.escape
 
 
+def kern(h):
+    """Bodoni Moda saknar kerning för W före gemen (Wa, We, Wo). Täpps till med .kw i site.css."""
+    return re.sub(r"W(?=[a-zà-ÿ])", '<span class="kw">W</span>', h)
+
+
 def md(s):
     """*kursiv* -> guldkursiv, resten escapas."""
-    return re.sub(r"\*(.+?)\*", r"<i>\1</i>", e(s or ""))
+    return kern(re.sub(r"\*(.+?)\*", r"<i>\1</i>", e(s or "")))
 
 
 def is_out(show, now):
@@ -119,7 +124,7 @@ def card(show):
     return f"""<a class="card" href="/shows/{e(show['slug'])}/" data-tags="{e(' '.join(show.get('tags', [])))}">
 {cover_img(show)}
 <div class="row"><span class="label" style="font-size:12px">No. {e(show['number'])}</span><span class="muted" style="font-size:13px">{dt.date.fromisoformat(show['date']).strftime('%b %Y')}</span></div>
-<h3>{e(show['title'])}</h3><div class="muted" style="font-size:14px">{e(show['subtitle'])}</div></a>"""
+<h3>{kern(e(show['title']))}</h3><div class="muted" style="font-size:14px">{e(show['subtitle'])}</div></a>"""
 
 
 def signup(site):
