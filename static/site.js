@@ -116,8 +116,8 @@
     if (document.querySelector(".consent")) return;
     const box = document.createElement("div");
     box.className = "consent"; box.setAttribute("role", "dialog"); box.setAttribute("aria-label", "Cookies");
-    box.innerHTML = '<p>May I count your visit? I use Google Analytics to see which shows you like. It sets cookies only if you say yes. <a href="/privacy/#cookies">Read more</a></p>'
-      + '<div class="btns"><button class="btn" data-v="denied">No thanks</button><button class="btn" data-v="granted">Yes please</button></div>';
+    box.innerHTML = '<p>We use cookies to see how the site is used. <a href="/privacy/#cookies">Privacy policy</a></p>'
+      + '<div class="btns"><button class="btn" data-v="denied">Decline</button><button class="btn" data-v="granted">Accept</button></div>';
     box.addEventListener("click", ev => {
       const v = ev.target.dataset.v;
       if (!v) return;
