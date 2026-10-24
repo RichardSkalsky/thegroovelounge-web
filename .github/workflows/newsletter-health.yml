@@ -1,0 +1,12 @@
+# Veckokontroll av nyhetsbrevet: webb-API:t frågar Brevo om listan. Håller Brevo-nyckeln vid liv
+# (den slutar gälla efter 90 dagar utan användning) och ger ett misslyckat jobb, och ett mejl från GitHub, om Brevo inte svarar.
+name: Newsletter health
+on:
+  schedule:
+    - cron: "17 6 * * 1"
+  workflow_dispatch:
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - run: curl -fsS https://api.thegroovelounge.com/v1/newsletter/health
