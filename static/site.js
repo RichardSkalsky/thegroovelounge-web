@@ -71,14 +71,25 @@
     } finally { form.querySelector("button[type=submit]").disabled = false; }
   });
 
-  // Nyhetsbrev utan tjänst ännu
+  // Nyhetsbrevet: webb-API:t ber Brevo skicka ett bekräftelsemejl. Först när länken klickas hamnar adressen på listan.
   document.querySelectorAll("form.signup").forEach(f => {
     if (f.getAttribute("action")) return;
-    f.addEventListener("submit", ev => {
+    f.addEventListener("submit", async ev => {
       ev.preventDefault();
       const s = f.parentElement.querySelector(".status");
-      if (s) s.textContent = "My letter starts with the first show. Check back soon.";
+      const d = new FormData(f);
+      const btn = f.querySelector("button[type=submit]");
+      btn.disabled = true;
+      try {
+        await post("/v1/newsletter", { email: d.get("email"), website: d.get("website") });
+        f.reset();
+        if (s) s.textContent = "Almost there. Check your inbox and click the link in my email to confirm.";
+      } catch (e) {
+        if (s) s.textContent = e.message === "400" ? "That doesn’t look like an email address. Try again?"
+                                                  : "Sorry, that didn’t go through. Please try again later.";
+      } finally { btn.disabled = false; }
     });
+  });
   });
 
   // Besöksstatistik: Google Analytics laddas först när besökaren har sagt ja. Innan dess skickas inget till Google.
