@@ -90,7 +90,6 @@
       } finally { btn.disabled = false; }
     });
   });
-  });
 
   // Besöksstatistik: Google Analytics laddas först när besökaren har sagt ja. Innan dess skickas inget till Google.
   const ga = (document.querySelector('meta[name="tgl-ga"]') || {}).content || "";
