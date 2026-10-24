@@ -59,6 +59,7 @@ def page(site, title, body, desc=None, current=None, image=None, path="/"):
     img = site["base_url"] + (image or "/static/img/simone-leende.jpg")
     menu = "".join(f'<a href="{h}"{" aria-current=page" if current == k else ""}>{t}</a>'
                    for k, h, t in (("shows", "/shows/", "Shows"), ("about", "/about/", "About me"), ("letter", "/#letter", "Newsletter")))
+    cookies = ' · <a href="/privacy/#cookies" data-consent>Cookie settings</a>' if site.get("ga_id") else ""
     socials = " · ".join(f'<a href="{e(u)}" rel="me">{e(n)}</a>' if u else e(n) for n, u in site["socials"])
     return f"""<!doctype html>
 <html lang="en">
@@ -68,6 +69,7 @@ def page(site, title, body, desc=None, current=None, image=None, path="/"):
 <title>{e(title)}</title>
 <meta name="description" content="{e(desc)}">
 <meta name="tgl-api" content="{e(site.get('api_base', ''))}">
+<meta name="tgl-ga" content="{e(site.get('ga_id', ''))}">
 <meta property="og:title" content="{e(title)}">
 <meta property="og:description" content="{e(desc)}">
 <meta property="og:image" content="{e(img)}">
@@ -94,7 +96,7 @@ def page(site, title, body, desc=None, current=None, image=None, path="/"):
 <div style="display:flex;flex-direction:column;gap:14px"><div class="label">The Groove Lounge</div>
 <div class="display" style="font-size:30px">Every record has a <i>story.</i></div>
 <div class="muted" style="font-size:14px">Peckham, South London · <a href="mailto:{e(site['email'])}">{e(site['email'])}</a></div></div>
-<div class="links"><div>{socials}</div><div><a href="/privacy/">Privacy policy</a> · <a href="/feed.xml">RSS</a></div></div>
+<div class="links"><div>{socials}</div><div><a href="/privacy/">Privacy policy</a> · <a href="/feed.xml">RSS</a>{cookies}</div></div>
 </div></footer>
 <script src="/static/site.js" defer></script>
 </body>
@@ -389,9 +391,21 @@ def thanks(site):
 
 def privacy(site):
     em = e(site["email"])
+    ga = site.get("ga_id")
+    this_site = ("We use cookies only for visitor statistics, and only if you say yes. See <a href=\"#cookies\">Cookies and visitor statistics</a> below. "
+                 "We use no advertising and no other tracking.") if ga else "We do not use cookies, analytics, advertising or tracking of any kind."
+    stats = ("Cookies and visitor statistics", "<p id=\"cookies\">When you first visit, we ask if we may count your visit. Only if you say yes, the website loads "
+             "<a href=\"https://policies.google.com/privacy\">Google Analytics</a> from Google Ireland Limited. Before that, nothing is sent to Google.</p>"
+             "<ul><li>It shows us which pages and shows people visit, roughly where in the world they are, and which device and browser they use. We use it only to make better shows and a better website.</li>"
+             "<li>Google Analytics sets the cookies <code>_ga</code> and <code>_ga_*</code>, which last up to 13 months. Google does not store your IP address.</li>"
+             "<li>Google signals and all advertising features are turned off. The data is kept for 14 months.</li>"
+             "<li>Google may process the data in the United States under the EU–US Data Privacy Framework.</li>"
+             "<li>You can change your mind at any time with <a href=\"#cookies\" data-consent>Cookie settings</a> at the bottom of every page. If you say no, the cookies are removed. "
+             "Your choice is remembered in your browser’s local storage, not in a cookie.</li></ul>")
     secs = [
         ("Who we are", f"<p>The Groove Lounge is a music radio show about soul, funk, disco and R&amp;B, published on Mixcloud. It is a private, non-commercial project. Richard Skalsky is responsible for your data. Contact: <a href=\"mailto:richard@thegroovelounge.com\">richard@thegroovelounge.com</a>.</p>"),
-        ("This website", "<ul><li>We do not use cookies, analytics, advertising or tracking of any kind.</li><li>The website is hosted on GitHub Pages. GitHub may log technical information such as IP addresses for security and operation. See the <a href=\"https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement\">GitHub Privacy Statement</a>.</li><li>All fonts are served from this website. No requests are made to Google or other font services.</li><li>Shows are played through Mixcloud’s player. When you play a show, Mixcloud’s own <a href=\"https://www.mixcloud.com/privacy/\">privacy policy</a> applies.</li></ul>"),
+        ("This website", f"<ul><li>{this_site}</li><li>The website is hosted on GitHub Pages. GitHub may log technical information such as IP addresses for security and operation. See the <a href=\"https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement\">GitHub Privacy Statement</a>.</li><li>All fonts are served from this website, not from Google or other font services.</li><li>Shows are played through Mixcloud’s player. When you play a show, Mixcloud’s own <a href=\"https://www.mixcloud.com/privacy/\">privacy policy</a> applies.</li></ul>"),
+        *([stats] if ga else []),
         ("Ratings and notes", "<p>When you rate a show or leave a note for Simone, we store your rating, your note, the first name and town you give us, and your email address only if you add it. The data is stored with our provider Scaleway in Paris, France, within the EU. We use it to read your note, to reply if you asked us to, and to remember feedback for future shows. We quote your note and first name on the website or in a show only if you ticked the box. Notes are deleted after two years, or earlier if you ask.</p>"),
         ("The weekly letter", "<p>If you sign up, we use your email address only to send the letter when a new show is out. You confirm your address before anything is sent, and every letter has a one-click unsubscribe link.</p>"),
         ("When you write to us", f"<p>If you email <a href=\"mailto:{em}\">{em}</a>, we use your email address and message only to read and reply to you, and to remember song requests or feedback for future shows. We never sell or share your information with anyone.</p>"),

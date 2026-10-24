@@ -80,4 +80,47 @@
       if (s) s.textContent = "My letter starts with the first show. Check back soon.";
     });
   });
+
+  // Besöksstatistik: Google Analytics laddas först när besökaren har sagt ja. Innan dess skickas inget till Google.
+  const ga = (document.querySelector('meta[name="tgl-ga"]') || {}).content || "";
+  const KEY = "tgl-consent";
+  const choice = () => { try { return localStorage.getItem(KEY); } catch (e) { return null; } };
+  const remember = v => { try { localStorage.setItem(KEY, v); } catch (e) {} };
+  function loadGA() {
+    if (window.gtag) return;
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = function () { dataLayer.push(arguments); };
+    gtag("js", new Date());
+    gtag("config", ga, { allow_google_signals: false, allow_ad_personalization_signals: false, cookie_expires: 34128000 }); // 13 månader
+    const s = document.createElement("script");
+    s.async = true; s.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(ga);
+    document.head.appendChild(s);
+  }
+  function clearGA() {
+    document.cookie.split(";").map(c => c.split("=")[0].trim()).filter(n => n.startsWith("_ga")).forEach(n => {
+      for (const d of ["", "; domain=" + location.hostname, "; domain=." + location.hostname.replace(/^www\./, "")])
+        document.cookie = n + "=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/" + d;
+    });
+  }
+  function ask() {
+    if (document.querySelector(".consent")) return;
+    const box = document.createElement("div");
+    box.className = "consent"; box.setAttribute("role", "dialog"); box.setAttribute("aria-label", "Cookies");
+    box.innerHTML = '<p>May I count your visit? I use Google Analytics to see which shows you like. It sets cookies only if you say yes. <a href="/privacy/#cookies">Read more</a></p>'
+      + '<div class="btns"><button class="btn" data-v="denied">No thanks</button><button class="btn" data-v="granted">Yes please</button></div>';
+    box.addEventListener("click", ev => {
+      const v = ev.target.dataset.v;
+      if (!v) return;
+      const had = choice() === "granted";
+      remember(v); box.remove();
+      if (v === "granted") loadGA();
+      else if (had) { clearGA(); location.reload(); }     // laddat skript försvinner först vid omladdning
+    });
+    document.body.appendChild(box);
+    box.querySelector("button").focus({ preventScroll: true });
+  }
+  if (ga) {
+    if (choice() === "granted") loadGA(); else { clearGA(); if (!choice()) ask(); }   // städar även cookies som GA skrev precis innan omladdningen
+    document.querySelectorAll("[data-consent]").forEach(a => a.addEventListener("click", ev => { ev.preventDefault(); ask(); }));
+  }
 })();
