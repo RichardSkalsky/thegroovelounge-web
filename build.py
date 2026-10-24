@@ -428,7 +428,9 @@ def notfound(site):
 def feed(site, shows):
     items = ""
     for s in shows:
-        d = dt.datetime.fromisoformat(s["date"] + "T18:00:00+00:00")
+        # Riktig publiceringstid: Brevos RSS-kampanj väljer poster efter pubDate
+        d = dt.datetime.fromisoformat(s["publish_at"].replace("Z", "+00:00")) if s.get("publish_at") \
+            else dt.datetime.fromisoformat(s["date"] + "T18:00:00+00:00")
         url = f"{site['base_url']}/shows/{s['slug']}/"
         items += f"""<item><title>{e(s['title'])} · No. {e(s['number'])}</title><link>{url}</link><guid>{url}</guid>
 <pubDate>{format_datetime(d)}</pubDate><description>{e(s['teaser'])} {e(s.get('description', ''))}</description>
