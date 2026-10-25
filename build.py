@@ -427,6 +427,16 @@ def notfound(site):
     return page(site, "Not found · The Groove Lounge", body, path="/404.html")
 
 
+def content_html(s):
+    """Simones text som HTML-stycken till flödets content:encoded (nyhetsbrevet i Brevo läser {{ item.CONTENT_ENCODED }})."""
+    paras = [s["teaser"]] + [x.strip() for x in (s.get("description") or "").split("\n\n") if x.strip()]
+    out = []
+    for i, para in enumerate(paras):
+        t = e(para).replace("\n", "<br>")
+        out.append(f"<p><em>{t}</em></p>" if i == 0 or (para.startswith("— ") and len(para) < 30) else f"<p>{t}</p>")
+    return "".join(out).replace("]]>", "]]&gt;")
+
+
 def feed(site, shows):
     items = ""
     for s in shows:
@@ -436,9 +446,10 @@ def feed(site, shows):
         url = f"{site['base_url']}/shows/{s['slug']}/"
         items += f"""<item><title>{e(s['title'])} · No. {e(s['number'])}</title><link>{url}</link><guid>{url}</guid>
 <pubDate>{format_datetime(d)}</pubDate><description>{e(s['teaser'])} {e(s.get('description', ''))}</description>
+<content:encoded><![CDATA[{content_html(s)}]]></content:encoded>
 <enclosure url="{site['base_url']}/static/covers/{e(s['slug'])}.jpg" type="image/jpeg" length="0"/></item>\n"""
     return f"""<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0"><channel><title>The Groove Lounge</title><link>{site['base_url']}/</link>
+<rss version="2.0" xmlns:content="http://purl.org/rss/1.0/modules/content/"><channel><title>The Groove Lounge</title><link>{site['base_url']}/</link>
 <description>{e(site['description'])}</description><language>en-gb</language>
 {items}</channel></rss>
 """
