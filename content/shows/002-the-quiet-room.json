@@ -1,0 +1,172 @@
+{
+  "number": "002",
+  "slug": "the-quiet-room",
+  "title": "The Quiet Room",
+  "subtitle": "Soul, R&B & Deep Soul, 1969–1983",
+  "date": "2026-10-26",
+  "publish_at": "2026-10-26T20:00:00Z",
+  "duration": "55 min",
+  "artists": [
+    "Marvin Gaye",
+    "Curtis Mayfield",
+    "Teddy Pendergrass",
+    "Minnie Riperton"
+  ],
+  "tags": [
+    "soul",
+    "rb",
+    "oldies",
+    "old-school",
+    "neo-soul"
+  ],
+  "mixcloud_key": "the-quiet-room",
+  "teaser": "The room where male soul voices stopped performing and started telling the truth - twelve tracks, no hiding.",
+  "description": "There is a room in soul music that doesn't appear on any map. Not the dancefloor, not the church — somewhere between them, where a man sings something he cannot say straight out. That is where this show lives.\n\nWilliam Bell and Judy Clay listening to each other across a Memphis studio. Ronnie Dyson's falsetto sitting still rather than reaching. Curtis Mayfield setting down the weight for a moment. Bobby Womack talking to someone in the same room. Two Teddy Pendergrass tracks from the same year, the same label — completely opposite ends of himself.\n\nMinnie Riperton answers at the end. Because intimacy was always a conversation, not a monologue.\n\n— Simone",
+  "quote": "In the Rain is a piano, some strings, and a man with nowhere left to hide. It's the most unguarded moment in this show. Let it land.",
+  "home_quote": {
+    "text": "The still ones are often the strongest. *He understood that earlier than most.*",
+    "context": "On Luther Vandross, Better Love"
+  },
+  "tracklist": [
+    {
+      "type": "track",
+      "start": 0,
+      "artist": "William Bell",
+      "title": "Private Number (feat. Judy Clay)",
+      "year": "1969"
+    },
+    {
+      "type": "chapter",
+      "start": 152,
+      "title": "On Ronnie Dyson"
+    },
+    {
+      "type": "track",
+      "start": 167,
+      "artist": "Ronnie Dyson",
+      "title": "Just Don't Want to Be Lonely (Single Version)",
+      "year": "1970"
+    },
+    {
+      "type": "chapter",
+      "start": 347,
+      "title": "On The Dramatics"
+    },
+    {
+      "type": "track",
+      "start": 355,
+      "artist": "The Dramatics",
+      "title": "In the Rain (Single Version)",
+      "year": "1971"
+    },
+    {
+      "type": "chapter",
+      "start": 552,
+      "title": "On Curtis Mayfield"
+    },
+    {
+      "type": "track",
+      "start": 572,
+      "artist": "Curtis Mayfield",
+      "title": "So In Love",
+      "year": "1975"
+    },
+    {
+      "type": "chapter",
+      "start": 875,
+      "title": "On Marvin Gaye"
+    },
+    {
+      "type": "track",
+      "start": 912,
+      "artist": "Marvin Gaye",
+      "title": "My Love Is Waiting",
+      "year": "1982"
+    },
+    {
+      "type": "chapter",
+      "start": 1204,
+      "title": "On Bobby Womack"
+    },
+    {
+      "type": "track",
+      "start": 1241,
+      "artist": "Bobby Womack",
+      "title": "How Could You Break My Heart?",
+      "year": "1979"
+    },
+    {
+      "type": "chapter",
+      "start": 1539,
+      "title": "On Harold Melvin & The Blue Notes"
+    },
+    {
+      "type": "track",
+      "start": 1562,
+      "artist": "Harold Melvin & The Blue Notes",
+      "title": "Hope That We Can Be Together Soon (feat. Sharon Paige)",
+      "year": "1975",
+      "year_edited": true
+    },
+    {
+      "type": "chapter",
+      "start": 1768,
+      "title": "On The Isley Brothers"
+    },
+    {
+      "type": "track",
+      "start": 1783,
+      "artist": "The Isley Brothers",
+      "title": "Between the Sheets",
+      "year": "1983"
+    },
+    {
+      "type": "chapter",
+      "start": 2101,
+      "title": "On Luther Vandross"
+    },
+    {
+      "type": "track",
+      "start": 2118,
+      "artist": "Luther Vandross",
+      "title": "Better Love",
+      "year": "1982"
+    },
+    {
+      "type": "chapter",
+      "start": 2482,
+      "title": "On Teddy Pendergrass"
+    },
+    {
+      "type": "track",
+      "start": 2508,
+      "artist": "Teddy Pendergrass",
+      "title": "You Can't Hide from Yourself",
+      "year": "1977"
+    },
+    {
+      "type": "chapter",
+      "start": 2740,
+      "title": "On Teddy Pendergrass"
+    },
+    {
+      "type": "track",
+      "start": 2766,
+      "artist": "Teddy Pendergrass",
+      "title": "The Whole Town's Laughing at Me",
+      "year": "1977"
+    },
+    {
+      "type": "chapter",
+      "start": 3020,
+      "title": "On Minnie Riperton"
+    },
+    {
+      "type": "track",
+      "start": 3047,
+      "artist": "Minnie Riperton",
+      "title": "Baby, This Love I Have",
+      "year": "1975"
+    }
+  ]
+}
