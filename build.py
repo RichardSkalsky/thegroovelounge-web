@@ -30,6 +30,11 @@ def is_out(show, now):
     return not at or dt.datetime.fromisoformat(at.replace("Z", "+00:00")) <= now
 
 
+def is_test(show):
+    """Testshower (nummer 900–999, team#4) får bara en egen sida med noindex: aldrig i flödet, på startsidan eller i arkivet."""
+    return int(show["number"]) >= 900
+
+
 def load(demo=False):
     site = json.loads((ROOT / "content/site.json").read_text(encoding="utf-8"))
     dirs = ["content/shows"] + (["content/demo-shows"] if demo else [])     # exemplen bara i förhandsvisningen
@@ -461,6 +466,8 @@ def favicon():
 
 def build(demo, out):
     site, shows = load(demo)
+    tests = [s for s in shows if is_test(s)]
+    shows = [s for s in shows if not is_test(s)]
     if out.exists():
         shutil.rmtree(out)
     out.mkdir(parents=True)
@@ -471,6 +478,9 @@ def build(demo, out):
     w("shows/index.html", archive(site, shows) if shows else archive_empty(site))
     for i, s in enumerate(shows):
         w(f"shows/{s['slug']}/index.html", show_page(site, shows, i, demo))
+    for s in tests:
+        w(f"shows/{s['slug']}/index.html",
+          show_page(site, [s], 0, demo).replace("<head>", '<head>\n<meta name="robots" content="noindex, nofollow">', 1))
     w("about/index.html", about(site))
     w("newsletter/thanks/index.html", thanks(site))
     w("privacy/index.html", privacy(site))
