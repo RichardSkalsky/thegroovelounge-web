@@ -83,6 +83,8 @@ def page(site, title, body, desc=None, current=None, image=None, path="/"):
 <link rel="canonical" href="{e(url)}">
 <link rel="alternate" type="application/rss+xml" title="The Groove Lounge" href="/feed.xml">
 <link rel="icon" href="/static/img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="Groove Lounge">
 <link rel="preload" href="/static/fonts/BodoniModa-normal-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/static/fonts/fonts.css">
 <link rel="stylesheet" href="/static/site.css">
@@ -474,6 +476,7 @@ def build(demo, out):
     shutil.copytree(ROOT / "static", out / "static")
     w = lambda rel, text: ((out / rel).parent.mkdir(parents=True, exist_ok=True), (out / rel).write_text(text, encoding="utf-8"))
     w("static/img/favicon.svg", favicon())
+    shutil.copy(ROOT / "static/img/apple-touch-icon.png", out / "apple-touch-icon.png")  # iOS hämtar den här adressen även utan länk
     w("index.html", home(site, shows) if shows else home_prelaunch(site))
     w("shows/index.html", archive(site, shows) if shows else archive_empty(site))
     for i, s in enumerate(shows):
