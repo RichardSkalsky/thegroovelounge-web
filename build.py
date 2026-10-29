@@ -331,7 +331,7 @@ def show_page(site, shows, i, demo):
 <h3>Leave me <i class="gold">a note</i></h3>
 <div class="field"><span>How was the show?</span>{stars(s['number'], 'Your rating')}</div>
 <div class="pair"><label class="field"><span>First name</span><input name="name" autocomplete="given-name" maxlength="60"></label>
-<label class="field"><span>Where are you listening from?</span><input name="town" maxlength="80"></label></div>
+<label class="field"><span>Listening from</span><input name="town" maxlength="80"></label></div>
 <label class="field"><span>Your note</span><textarea name="text" required maxlength="3000" placeholder="{placeholder}"></textarea></label>
 <label class="field"><span>Email (optional, only if you want a reply)</span><input type="email" name="email" autocomplete="email" maxlength="200"></label>
 <label class="hp">Leave empty <input name="website" tabindex="-1" autocomplete="off"></label>
