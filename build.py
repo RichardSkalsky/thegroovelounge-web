@@ -405,6 +405,9 @@ def thanks(site):
     return page(site, "You’re in · The Groove Lounge", body, path="/newsletter/thanks/")
 
 
+POLICY_DATE = "2026-10-29"      # ändras när texten ändras, inte vid varje bygge
+
+
 def privacy(site):
     em = e(site["email"])
     ga = site.get("ga_id")
@@ -422,16 +425,18 @@ def privacy(site):
         ("Who we are", f"<p>The Groove Lounge is a music radio show about soul, funk, disco and R&amp;B, published on Mixcloud. It is a private, non-commercial project. Richard Skalsky is responsible for your data. Contact: <a href=\"mailto:richard@thegroovelounge.com\">richard@thegroovelounge.com</a>.</p>"),
         ("This website", f"<ul><li>{this_site}</li><li>The website is hosted on GitHub Pages. GitHub may log technical information such as IP addresses for security and operation. See the <a href=\"https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement\">GitHub Privacy Statement</a>.</li><li>All fonts are served from this website, not from Google or other font services.</li><li>Shows are played through Mixcloud’s player. When you play a show, Mixcloud’s own <a href=\"https://www.mixcloud.com/privacy/\">privacy policy</a> applies.</li></ul>"),
         *([stats] if ga else []),
-        ("Ratings and notes", "<p>When you rate a show or leave a note for Simone, we store your rating, your note, the first name and town you give us, and your email address only if you add it. The data is stored with our provider Scaleway in Paris, France, within the EU. We use it to read your note, to reply if you asked us to, and to remember feedback for future shows. We quote your note and first name on the website or in a show only if you ticked the box. Notes are deleted after two years, or earlier if you ask.</p>"),
+        ("Ratings and notes", "<p>When you rate a show or leave a note for Simone, we store your rating, your note, the first name and town you give us, and your email address only if you add it. The data is stored with Scaleway in Paris, France. We use it to read and reply to your note and to remember feedback for future shows. "
+         "We quote your note and first name on the website, sometimes with Simone’s reply, only if you ticked the box. Notes are deleted after two years, or earlier if you ask.</p>"),
         ("The weekly letter", "<p>If you sign up, we use your email address only to send the letter when a new show is out. You confirm your address before anything is sent, and every letter has a one-click unsubscribe link.</p>"
          "<p>The letter is sent with <a href=\"https://www.brevo.com/legal/privacypolicy/\">Brevo</a> (Sendinblue SAS, Paris, France), which stores the list within the EU. "
          "Brevo records whether a letter was delivered, opened or clicked, which we use only to see that the letter works. When you unsubscribe, you get no more letters, and Brevo keeps only a note that you should not be emailed again.</p>"),
-        ("When you write to us", f"<p>If you email <a href=\"mailto:{em}\">{em}</a>, we use your email address and message only to read and reply to you, and to remember song requests or feedback for future shows. We never sell or share your information with anyone.</p>"),
+        ("When you write to us", f"<p>If you email <a href=\"mailto:{em}\">{em}</a> or comment on our shows or posts on Mixcloud, Instagram or Threads, we keep your name, address or username and message to reply to you and to remember feedback for future shows. They are deleted after two years, or earlier if you ask.</p>"
+         "<p>To read and reply to messages we use AI models from Anthropic in the United States. Your email address is never shared with them. We never sell your information or share it for marketing.</p>"),
         ("Google user data", "<p>The Groove Lounge uses an application that connects to Google Drive. It is used only with the show’s own Google account, to store and retrieve audio files, show material and backups.</p><ul><li>The application does not access, collect or store data from any other Google user.</li><li>Data from Google Drive is used only to produce and archive The Groove Lounge. It is not shared with third parties, not used for advertising and not used to train AI models.</li><li>The use of information received from Google APIs adheres to the <a href=\"https://developers.google.com/terms/api-services-user-data-policy\">Google API Services User Data Policy</a>, including the Limited Use requirements.</li></ul>"),
         ("Your rights", f"<p>Under the EU General Data Protection Regulation (GDPR) you can ask to see, correct or delete the personal data we hold about you. Write to <a href=\"mailto:richard@thegroovelounge.com\">richard@thegroovelounge.com</a> and we will respond within 30 days. You may also contact the Swedish Authority for Privacy Protection (IMY).</p>"),
         ("Changes", "<p>If this policy changes, the new version will be published on this page with a new date.</p>")]
     body = f"""<section class="section"><div class="wrap doc">
-<div style="display:flex;flex-direction:column;gap:16px"><div class="label">Privacy</div><h1 class="display" style="font-size:clamp(44px,5vw,60px)">Your data, <i>kept small.</i></h1><div class="muted" style="font-size:14px">Last updated: {dt.date.today().day} {dt.date.today().strftime('%B %Y')}</div></div>
+<div style="display:flex;flex-direction:column;gap:16px"><div class="label">Privacy</div><h1 class="display" style="font-size:clamp(44px,5vw,60px)">Your data, <i>kept small.</i></h1><div class="muted" style="font-size:14px">Last updated: {nice_date(POLICY_DATE)}</div></div>
 <div>{''.join(f'<section><h2>{h}</h2>{t}</section>' for h, t in secs)}</div></div></section>"""
     return page(site, "Privacy policy · The Groove Lounge", body, path="/privacy/")
 
