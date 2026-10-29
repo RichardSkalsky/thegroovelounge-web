@@ -126,6 +126,9 @@ a:hover { color: var(--gold-300); }
 .letters { display: flex; flex-direction: column; gap: 22px; }
 .letter { border-left: 2px solid var(--gold-500); padding: 4px 0 4px 22px; display: flex; flex-direction: column; gap: 8px; }
 .letter p { margin: 0; font: italic 400 22px/1.45 var(--display); }
+.letter__reply { margin-top: 10px; padding-left: 20px; border-left: 1px solid var(--hairline-strong); display: flex; flex-direction: column; gap: 10px; }
+.letter__reply p { margin: 0; font: 400 17px/1.65 var(--sans); color: var(--parchment); white-space: pre-line; }
+.letter__reply .sig { font-size: 30px; align-self: flex-start; margin-top: 2px; }
 .panel { background: var(--velvet-900); border: 1px solid var(--hairline-strong); padding: clamp(24px, 4vw, 44px); display: flex; flex-direction: column; gap: 20px; }
 .panel h3 { font: 600 36px/1.15 var(--display); margin: 0; }
 .field { display: flex; flex-direction: column; gap: 8px; flex: 1; min-width: 0; }

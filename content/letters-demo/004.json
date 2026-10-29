@@ -1,4 +1,13 @@
 [
-  {"text": "I played Hangin’ on a String at my wedding in 1986. Hearing you tell where it came from made me cry in the kitchen.", "name": "Maureen", "town": "Croydon"},
-  {"text": "Never knew Delegation were from Birmingham. Thirty years of dancing to them and I never knew.", "name": "Tunde", "town": "Manchester"}
+  {
+    "text": "I played Hangin’ on a String at my wedding in 1986. Hearing you tell where it came from made me cry in the kitchen.",
+    "name": "Maureen",
+    "town": "Croydon",
+    "reply": "Maureen, thank you. That record was written for a dance floor, and it found its way into a kitchen forty years later. That is exactly where it belongs.\n\nI played it again after reading your note."
+  },
+  {
+    "text": "Never knew Delegation were from Birmingham. Thirty years of dancing to them and I never knew.",
+    "name": "Tunde",
+    "town": "Manchester"
+  }
 ]

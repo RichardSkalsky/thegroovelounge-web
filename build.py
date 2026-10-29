@@ -53,6 +53,15 @@ def letters_for(show, demo):
     return []
 
 
+def reply_html(l):
+    """Simones svar under ett brev (valfritt, Richard 2026-10-29). Tomma rader blir stycken."""
+    if not l.get("reply"):
+        return ""
+    paras = [x.strip() for x in l["reply"].replace("\r", "").split("\n\n") if x.strip()]
+    body = "".join(f"<p>{e(x)}</p>" for x in paras)
+    return f'<div class="letter__reply">{body}<span class="sig">Simone</span></div>'
+
+
 def nice_date(s):
     d = dt.date.fromisoformat(s)
     return f"{d.day} {d.strftime('%B %Y')}"
@@ -281,7 +290,7 @@ def show_page(site, shows, i, demo):
     mid = f'<section class="section"><div class="wrap two">{tracks}{quote}</div></section>' if (tracks or quote) else ""
     ls = letters_for(s, demo)
     letters = ("<div style='display:flex;flex-direction:column;gap:22px;margin-top:18px'><div class=label>Letters I’ve chosen</div><div class=letters>"
-               + "".join(f'<figure class="letter" style="margin:0"><p>“{e(l["text"])}”</p><figcaption class="caps" style="font-size:13px">{e(l["name"])}, {e(l["town"])}</figcaption></figure>' for l in ls)
+               + "".join(f'<figure class="letter" style="margin:0"><p>“{e(l["text"])}”</p><figcaption class="caps" style="font-size:13px">{e(l["name"])}, {e(l["town"])}</figcaption>{reply_html(l)}</figure>' for l in ls)
                + "</div></div>") if ls else ("<div style='display:flex;flex-direction:column;gap:14px;margin-top:18px'><div class=label>Letters I’ve chosen</div>"
                "<div class=letter><p>No letters yet. <span class=gold>Be the first.</span></p><span class='caps' style='font-size:13px'>Write to me below, and I may share yours here.</span></div></div>")
     # Showens fråga är valfri (pausad 2026-10-22). Utan fråga: en allmän uppmaning att skriva.
