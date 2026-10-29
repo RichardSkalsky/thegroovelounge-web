@@ -7,7 +7,7 @@
 Bara standardbiblioteket. Designen följer riktning A (Velvet) i Claude Design,
 canvasen "The Groove Lounge – riktningar", och designsystemet "The Groove Lounge".
 """
-import argparse, datetime as dt, html, json, pathlib, re, shutil, urllib.parse
+import argparse, datetime as dt, html, json, os, pathlib, re, shutil, urllib.parse
 from email.utils import format_datetime
 
 ROOT = pathlib.Path(__file__).resolve().parent
@@ -507,6 +507,9 @@ def build(demo, out):
     w("feed.xml", feed(site, shows))
     w("CNAME", site["domain"] + "\n")
     w(".nojekyll", "")
+    # Läses av webb-API:ts GET /v1/status: jämför commit med senaste på main för att se om bygget ligger efter
+    w("build.json", json.dumps({"built_at": dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
+                                "commit": os.environ.get("GITHUB_SHA", "local")}) + "\n")
     return out
 
 
