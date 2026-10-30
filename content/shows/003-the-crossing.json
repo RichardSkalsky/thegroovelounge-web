@@ -1,0 +1,183 @@
+{
+  "number": "003",
+  "slug": "the-crossing",
+  "title": "The Crossing",
+  "subtitle": "British Soul, 1977–2024",
+  "date": "2026-10-30",
+  "publish_at": "2026-10-30T17:00:00Z",
+  "duration": "59 min",
+  "artists": [
+    "Delegation",
+    "Loose Ends",
+    "Omar",
+    "Imagination"
+  ],
+  "tags": [
+    "soul",
+    "rb",
+    "neo-soul",
+    "brit-funk",
+    "boogie"
+  ],
+  "mixcloud_key": "the-crossing",
+  "teaser": "From Birmingham to Canterbury, British soul didn't copy America — it absorbed it, melted it down, and found something entirely its own.",
+  "description": "There's a story about British soul that rarely gets told straight. Not imitation — absorption. A group from Birmingham in 1978 who sounded like they'd grown up on Gamble and Huff. A London trio who actually broke through in America without a gimmick. A voice from Canterbury who sang as if the microphone wasn't on, recording neo-soul before anyone had named it.\n\nLew Kirton is in here too — British soul with Barbadian roots, which makes it personal for me. Same part of the world my mum came from.\n\nThe show ends in 2024, with a voice that knows exactly where it came from. The circle closes. It always does.\n\n— Simone",
+  "quote": "Omar, from Canterbury, released There's Nothing Like This in 1990, and it sounded like it had been recorded in a bedroom in America in 1972.",
+  "home_quote": {
+    "text": "Neo-soul before anyone had named it. *Omar.*",
+    "context": "On Omar, There's Nothing Like This"
+  },
+  "tracklist": [
+    {
+      "type": "track",
+      "start": 0,
+      "artist": "Delegation",
+      "title": "Oh Honey",
+      "year": "1978"
+    },
+    {
+      "type": "chapter",
+      "start": 326,
+      "title": "On Loose Ends"
+    },
+    {
+      "type": "track",
+      "start": 340,
+      "artist": "Loose Ends",
+      "title": "Hanging on a String (Contemplating)",
+      "year": "1985"
+    },
+    {
+      "type": "chapter",
+      "start": 584,
+      "title": "On Delegation"
+    },
+    {
+      "type": "track",
+      "start": 600,
+      "artist": "Delegation",
+      "title": "Heartache",
+      "year": "1981"
+    },
+    {
+      "type": "chapter",
+      "start": 842,
+      "title": "On Imagination"
+    },
+    {
+      "type": "track",
+      "start": 864,
+      "artist": "Imagination",
+      "title": "Just an Illusion",
+      "year": "1982"
+    },
+    {
+      "type": "chapter",
+      "start": 1079,
+      "title": "On Lew Kirton"
+    },
+    {
+      "type": "track",
+      "start": 1094,
+      "artist": "Lew Kirton",
+      "title": "Don't Wanna Wait",
+      "year": "2012"
+    },
+    {
+      "type": "chapter",
+      "start": 1396,
+      "title": "On Maxine Nightingale"
+    },
+    {
+      "type": "track",
+      "start": 1415,
+      "artist": "Maxine Nightingale",
+      "title": "Lead Me On",
+      "year": "1979"
+    },
+    {
+      "type": "chapter",
+      "start": 1580,
+      "title": "On The Commodores"
+    },
+    {
+      "type": "track",
+      "start": 1611,
+      "artist": "The Commodores",
+      "title": "Zoom",
+      "year": "1977"
+    },
+    {
+      "type": "chapter",
+      "start": 1985,
+      "title": "On Omar"
+    },
+    {
+      "type": "track",
+      "start": 2003,
+      "artist": "Omar",
+      "title": "There's Nothing Like This",
+      "year": "1990"
+    },
+    {
+      "type": "chapter",
+      "start": 2230,
+      "title": "On Jalen Ngonda"
+    },
+    {
+      "type": "track",
+      "start": 2258,
+      "artist": "Jalen Ngonda",
+      "title": "Come Around and Love Me",
+      "year": "2023"
+    },
+    {
+      "type": "chapter",
+      "start": 2426,
+      "title": "On Change"
+    },
+    {
+      "type": "track",
+      "start": 2437,
+      "artist": "Change",
+      "title": "Hold Tight (Long Version)",
+      "year": "2015"
+    },
+    {
+      "type": "chapter",
+      "start": 2732,
+      "title": "On Ingram"
+    },
+    {
+      "type": "track",
+      "start": 2749,
+      "artist": "Ingram",
+      "title": "With You",
+      "year": "1984"
+    },
+    {
+      "type": "chapter",
+      "start": 3019,
+      "title": "On Atlantic Starr"
+    },
+    {
+      "type": "track",
+      "start": 3047,
+      "artist": "Atlantic Starr",
+      "title": "You",
+      "year": "1999"
+    },
+    {
+      "type": "chapter",
+      "start": 3261,
+      "title": "On Chrisette Michele"
+    },
+    {
+      "type": "track",
+      "start": 3288,
+      "artist": "Chrisette Michele",
+      "title": "Home",
+      "year": "2024"
+    }
+  ]
+}
