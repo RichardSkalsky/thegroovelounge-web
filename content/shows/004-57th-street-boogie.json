@@ -1,0 +1,171 @@
+{
+  "number": "004",
+  "slug": "57th-street-boogie",
+  "title": "57th Street Boogie",
+  "subtitle": "New York Boogie & Disco Futures, 1979–1984",
+  "date": "2026-11-02",
+  "publish_at": "2026-11-02T17:00:00Z",
+  "duration": "69 min",
+  "artists": [
+    "Inner Life",
+    "D Train",
+    "Sharon Redd",
+    "Evelyn Champagne King"
+  ],
+  "tags": [
+    "disco",
+    "boogie",
+    "soul",
+    "rb",
+    "funk"
+  ],
+  "mixcloud_key": "57th-street-boogie",
+  "teaser": "West 57th Street, Manhattan — where disco didn't die, it got tighter, stranger, and started pointing somewhere new.",
+  "description": "In 1979 the press declared disco dead. On the dance floors of Manhattan it was very much alive — just changing shape. This show follows one small independent label, Prelude Records, and the musicians and remixers who turned strings into synth bass and built something that didn't have a name yet.\n\nPatrick Adams, François Kevorkian, Hubert Eaves III and Kashif. D Train's You're the One for Me went to number one because Larry Levan played it at Paradise Garage until the room agreed. That's how records were tested then.\n\nThe show ends in 1983 with a studio project, no face on the sleeve, no fixed lineup — a groove that 808 State sampled six years later, already inside acid house. I found records like these in a shop in Peckham. You'd hold them up to the light and try to work out who was really in the room.\n\n— Simone",
+  "quote": "Disco wasn't dead. It was changing shape.",
+  "home_quote": {
+    "text": "Two men from Brooklyn and a room full of machines *that sounded like an orchestra.*",
+    "context": "On D Train, You're the One for Me"
+  },
+  "tracklist": [
+    {
+      "type": "track",
+      "start": 0,
+      "artist": "Inner Life",
+      "title": "I'm Caught Up (In a One Night Love Affair)",
+      "year": "1979"
+    },
+    {
+      "type": "chapter",
+      "start": 433,
+      "title": "On Skyy"
+    },
+    {
+      "type": "track",
+      "start": 457,
+      "artist": "Skyy",
+      "title": "Here's to You (12\" Version)",
+      "year": "1980"
+    },
+    {
+      "type": "chapter",
+      "start": 757,
+      "title": "On Empress"
+    },
+    {
+      "type": "track",
+      "start": 774,
+      "artist": "Empress",
+      "title": "Dyin' to Be Dancin'",
+      "year": "1981"
+    },
+    {
+      "type": "chapter",
+      "start": 1193,
+      "title": "On Gayle Adams"
+    },
+    {
+      "type": "track",
+      "start": 1215,
+      "artist": "Gayle Adams",
+      "title": "Love Fever (12\" Version)",
+      "year": "1981"
+    },
+    {
+      "type": "chapter",
+      "start": 1621,
+      "title": "On Waldo"
+    },
+    {
+      "type": "track",
+      "start": 1642,
+      "artist": "Waldo",
+      "title": "When It Comes to You",
+      "year": "1982"
+    },
+    {
+      "type": "chapter",
+      "start": 1939,
+      "title": "On D Train"
+    },
+    {
+      "type": "track",
+      "start": 1983,
+      "artist": "D Train",
+      "title": "You're the One for Me",
+      "year": "1981"
+    },
+    {
+      "type": "chapter",
+      "start": 2278,
+      "title": "On Evelyn Champagne King"
+    },
+    {
+      "type": "track",
+      "start": 2292,
+      "artist": "Evelyn Champagne King",
+      "title": "Im in Love",
+      "year": "1981"
+    },
+    {
+      "type": "chapter",
+      "start": 2633,
+      "title": "On Gwen Guthrie"
+    },
+    {
+      "type": "track",
+      "start": 2666,
+      "artist": "Gwen Guthrie",
+      "title": "It Should Have Been You",
+      "year": "1982"
+    },
+    {
+      "type": "chapter",
+      "start": 2914,
+      "title": "On Sharon Redd"
+    },
+    {
+      "type": "track",
+      "start": 2919,
+      "artist": "Sharon Redd",
+      "title": "Beat the Street",
+      "year": "1982"
+    },
+    {
+      "type": "chapter",
+      "start": 3282,
+      "title": "On France Joli"
+    },
+    {
+      "type": "track",
+      "start": 3296,
+      "artist": "France Joli",
+      "title": "Your Good Lovin'",
+      "year": "1982"
+    },
+    {
+      "type": "chapter",
+      "start": 3623,
+      "title": "On Kashif"
+    },
+    {
+      "type": "track",
+      "start": 3641,
+      "artist": "Kashif",
+      "title": "Are You the Woman (Single Version)",
+      "year": "1984"
+    },
+    {
+      "type": "chapter",
+      "start": 3863,
+      "title": "On Unique"
+    },
+    {
+      "type": "track",
+      "start": 3896,
+      "artist": "Unique",
+      "title": "What I Got Is What You Need",
+      "year": "1983"
+    }
+  ]
+}
