@@ -1,0 +1,159 @@
+{
+  "number": "005",
+  "slug": "funk-at-the-crossroads",
+  "title": "Funk at the Crossroads",
+  "subtitle": "Horns or machines, 1977–1983",
+  "date": "2026-11-06",
+  "publish_at": "2026-11-06T17:00:00Z",
+  "duration": "55 min",
+  "artists": [
+    "The Bar-Kays",
+    "Cameo",
+    "Rick James",
+    "Fatback Band"
+  ],
+  "tags": [
+    "funk",
+    "jazz-funk",
+    "boogie",
+    "old-school",
+    "soul"
+  ],
+  "mixcloud_key": "funk-at-the-crossroads",
+  "teaser": "From Dayton to Atlanta, 1977 to 1983 — the years when funk bands had to decide what they were willing to let go.",
+  "description": "This one is about the funk band as a unit. Eight, nine, ten musicians in a van, writing and producing their own records — Dayton, Portland, Vallejo, Memphis, Brooklyn, Atlanta. We start in 1977 with horns and live drums and follow the story east and west and south until 1983.\n\nThe transition didn't happen overnight. Shock showed me the moment of arrival — synthesizers sitting side by side with the brass, none of them asking permission. Skyy in 1980, then Skyy in 1981: same band, same producer, same label, different weight. That's how it happened inside most of these bands. Gradually, and with the same hands.\n\nCameo trimmed the roster and called it 21st Century Bebop. Then Fatback asked the question directly. The answer, as it turned out, was yes.\n\n— Simone",
+  "quote": "A jazz-trained band playing boogie funk — still a band, still playing together, still every note chosen by a human hand.",
+  "home_quote": {
+    "text": "Not replacing anything yet, just arriving. *The horns are still there. But the machines have walked in the door.*",
+    "context": "On Shock, Nite Life"
+  },
+  "tracklist": [
+    {
+      "type": "track",
+      "start": 0,
+      "artist": "Faze-O",
+      "title": "Riding High",
+      "year": "1977"
+    },
+    {
+      "type": "chapter",
+      "start": 316,
+      "title": "On Pleasure"
+    },
+    {
+      "type": "track",
+      "start": 334,
+      "artist": "Pleasure",
+      "title": "Glide",
+      "year": "1979"
+    },
+    {
+      "type": "chapter",
+      "start": 702,
+      "title": "On Shock"
+    },
+    {
+      "type": "track",
+      "start": 725,
+      "artist": "Shock",
+      "title": "Nite Life",
+      "year": "1979"
+    },
+    {
+      "type": "chapter",
+      "start": 982,
+      "title": "On Con Funk Shun"
+    },
+    {
+      "type": "track",
+      "start": 995,
+      "artist": "Con Funk Shun",
+      "title": "Touch",
+      "year": "1980"
+    },
+    {
+      "type": "chapter",
+      "start": 1243,
+      "title": "On The Bar-Kays"
+    },
+    {
+      "type": "track",
+      "start": 1265,
+      "artist": "The Bar-Kays",
+      "title": "You Made A Change In My Life",
+      "year": "1982"
+    },
+    {
+      "type": "chapter",
+      "start": 1507,
+      "title": "On Rick James"
+    },
+    {
+      "type": "track",
+      "start": 1530,
+      "artist": "Rick James",
+      "title": "Give It to Me Baby",
+      "year": "1981"
+    },
+    {
+      "type": "chapter",
+      "start": 1760,
+      "title": "On Skyy"
+    },
+    {
+      "type": "track",
+      "start": 1797,
+      "artist": "Skyy",
+      "title": "Here's to You (12\" Version)",
+      "year": "1980"
+    },
+    {
+      "type": "chapter",
+      "start": 2097,
+      "title": "On Skyy"
+    },
+    {
+      "type": "track",
+      "start": 2128,
+      "artist": "Skyy",
+      "title": "Girl in Blue",
+      "year": "1981"
+    },
+    {
+      "type": "chapter",
+      "start": 2381,
+      "title": "On Brick"
+    },
+    {
+      "type": "track",
+      "start": 2388,
+      "artist": "Brick",
+      "title": "Free Dancer",
+      "year": "1982"
+    },
+    {
+      "type": "chapter",
+      "start": 2776,
+      "title": "On Cameo"
+    },
+    {
+      "type": "track",
+      "start": 2819,
+      "artist": "Cameo",
+      "title": "This Life Is Not For Me",
+      "year": "1983"
+    },
+    {
+      "type": "chapter",
+      "start": 3020,
+      "title": "On Fatback Band"
+    },
+    {
+      "type": "track",
+      "start": 3055,
+      "artist": "Fatback Band",
+      "title": "Is This the Future",
+      "year": "1983"
+    }
+  ]
+}
