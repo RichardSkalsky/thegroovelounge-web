@@ -1,0 +1,183 @@
+{
+  "number": "006",
+  "slug": "two-voices-after-midnight",
+  "title": "Two Voices After Midnight",
+  "subtitle": "Soul Duets, 1975–1987",
+  "date": "2026-11-09",
+  "publish_at": "2026-11-09T20:00:00Z",
+  "duration": "59 min",
+  "artists": [
+    "Norman Connors",
+    "Ashford & Simpson",
+    "The Dells",
+    "Kashif & Meli'sa Morgan"
+  ],
+  "tags": [
+    "soul",
+    "rb",
+    "oldies",
+    "old-school",
+    "neo-soul"
+  ],
+  "mixcloud_key": "two-voices-after-midnight",
+  "teaser": "Two voices in the same room, listening to each other — from Philadelphia in 1975 to Kashif and Meli'sa Morgan in 1987, an hour of soul as conversation.",
+  "description": "Tonight is about singing with someone, not just beside them. We start with the songwriters behind a classic performing their own words — a different kind of intimacy — then follow the duet through Philadelphia, through Norman Connors pairing voices like a matchmaker, and into the quiet storm era where the conversations got slower and more honest.\n\nConnors keeps returning here: first with Michael Henderson and Jean Carn floating over keyboards, then shaping Al Johnson five years later. Jean Carn appears twice, and so does Teddy Pendergrass — once behind Harold Melvin, once as an equal beside Stephanie Mills. The same voices, different conditions, different years.\n\nWe close with Kashif and Meli'sa Morgan — older, a little less hurried. Same idea as where we started.\n\n— Simone",
+  "quote": "Some producers make music, some producers make introductions. Norman Connors was the second kind — a jazz drummer who heard what two voices could do together before either of them did.",
+  "home_quote": {
+    "text": "Thirty years of harmonies lived in, adjusted, *made permanent.*",
+    "context": "On The Dells, Love On"
+  },
+  "tracklist": [
+    {
+      "type": "track",
+      "start": 0,
+      "artist": "Mtume",
+      "title": "The Closer I Get to You",
+      "year": "1978"
+    },
+    {
+      "type": "chapter",
+      "start": 219,
+      "title": "On Harold Melvin & The Blue Notes"
+    },
+    {
+      "type": "track",
+      "start": 224,
+      "artist": "Harold Melvin & The Blue Notes",
+      "title": "Hope That We Can Be Together Soon (feat. Sharon Paige)",
+      "year": "1975"
+    },
+    {
+      "type": "chapter",
+      "start": 434,
+      "title": "On The Spinners"
+    },
+    {
+      "type": "track",
+      "start": 439,
+      "artist": "The Spinners",
+      "title": "Games People Play",
+      "year": "1975"
+    },
+    {
+      "type": "chapter",
+      "start": 708,
+      "title": "On Norman Connors"
+    },
+    {
+      "type": "track",
+      "start": 713,
+      "artist": "Norman Connors",
+      "title": "Valentine Love (feat. Michael Henderson & Jean Carn)",
+      "year": "1975"
+    },
+    {
+      "type": "chapter",
+      "start": 937,
+      "title": "On Michael Henderson"
+    },
+    {
+      "type": "track",
+      "start": 964,
+      "artist": "Michael Henderson",
+      "title": "Take Me I'm Yours",
+      "year": "1978"
+    },
+    {
+      "type": "chapter",
+      "start": 1218,
+      "title": "On Perry & Sanlin"
+    },
+    {
+      "type": "track",
+      "start": 1249,
+      "artist": "Perry & Sanlin",
+      "title": "Since You (Came Into My Life)",
+      "year": "1980"
+    },
+    {
+      "type": "chapter",
+      "start": 1545,
+      "title": "On Al Johnson"
+    },
+    {
+      "type": "track",
+      "start": 1550,
+      "artist": "Al Johnson",
+      "title": "I'm Back for More",
+      "year": "1980"
+    },
+    {
+      "type": "chapter",
+      "start": 1844,
+      "title": "On Stephanie Mills"
+    },
+    {
+      "type": "track",
+      "start": 1860,
+      "artist": "Stephanie Mills",
+      "title": "Two Hearts (feat. Teddy Pendergrass)",
+      "year": "1981"
+    },
+    {
+      "type": "chapter",
+      "start": 2129,
+      "title": "On Ashford & Simpson"
+    },
+    {
+      "type": "track",
+      "start": 2143,
+      "artist": "Ashford & Simpson",
+      "title": "Love It Away",
+      "year": "1982"
+    },
+    {
+      "type": "chapter",
+      "start": 2401,
+      "title": "On The Dells"
+    },
+    {
+      "type": "track",
+      "start": 2406,
+      "artist": "The Dells",
+      "title": "Love On",
+      "year": "1984"
+    },
+    {
+      "type": "chapter",
+      "start": 2646,
+      "title": "On Rene & Angela"
+    },
+    {
+      "type": "track",
+      "start": 2651,
+      "artist": "Rene & Angela",
+      "title": "You Don't Have to Cry",
+      "year": "1985"
+    },
+    {
+      "type": "chapter",
+      "start": 2956,
+      "title": "On Loose Ends"
+    },
+    {
+      "type": "track",
+      "start": 2964,
+      "artist": "Loose Ends",
+      "title": "Slow Down",
+      "year": "1986"
+    },
+    {
+      "type": "chapter",
+      "start": 3243,
+      "title": "On Kashif & Meli'sa Morgan"
+    },
+    {
+      "type": "track",
+      "start": 3265,
+      "artist": "Kashif & Meli'sa Morgan",
+      "title": "Love Changes",
+      "year": "1987"
+    }
+  ]
+}
