@@ -1,0 +1,183 @@
+{
+  "number": "007",
+  "slug": "soul-on-sunset",
+  "title": "Soul on Sunset",
+  "subtitle": "Los Angeles Soul, 1974–1984",
+  "date": "2026-11-13",
+  "publish_at": "2026-11-13T20:00:00Z",
+  "duration": "58 min",
+  "artists": [
+    "Barry White",
+    "Earth, Wind & Fire",
+    "Shalamar",
+    "Quincy Jones"
+  ],
+  "tags": [
+    "soul",
+    "rb",
+    "oldies",
+    "old-school",
+    "neo-soul"
+  ],
+  "mixcloud_key": "soul-on-sunset",
+  "teaser": "From Barry White's orchestra to Quincy Jones at Westlake — the decade when soul moved west and never looked back.",
+  "description": "Everyone talks about Detroit, Memphis, Philadelphia. But during the seventies, a lot of the greatest soul music was being made in Los Angeles — in studios where the session players came straight off film and television work, and the budgets showed.\n\nThis show follows that story in three chapters: Barry White and the big orchestra as blueprint, Maurice White building a family of artists around Earth, Wind and Fire, and then Solar Records and Quincy Jones taking the polish to its peak without losing the warmth underneath.\n\nMinnie Riperton, Patrice Rushen, Shalamar, Leon Ware, George Benson. The Temptations closing it out — Detroit legends, produced by Earth, Wind and Fire people, in a quiet storm ballad for a late Friday night.\n\n— Simone",
+  "quote": "That's what this chapter of the evening is about: what Maurice White built when he brought his singers west.",
+  "home_quote": {
+    "text": "Two people who've actually heard *what the other one said.*",
+    "context": "On Shalamar, Make That Move"
+  },
+  "tracklist": [
+    {
+      "type": "track",
+      "start": 0,
+      "artist": "Barry White",
+      "title": "It's Ecstasy When You Lay Down Next to Me",
+      "year": "1977"
+    },
+    {
+      "type": "chapter",
+      "start": 189,
+      "title": "On Minnie Riperton"
+    },
+    {
+      "type": "track",
+      "start": 204,
+      "artist": "Minnie Riperton",
+      "title": "The Edge of a Dream",
+      "year": "1974"
+    },
+    {
+      "type": "chapter",
+      "start": 436,
+      "title": "On Deniece Williams"
+    },
+    {
+      "type": "track",
+      "start": 442,
+      "artist": "Deniece Williams",
+      "title": "That's What Friends Are For",
+      "year": "1976"
+    },
+    {
+      "type": "chapter",
+      "start": 707,
+      "title": "On The Emotions"
+    },
+    {
+      "type": "track",
+      "start": 732,
+      "artist": "The Emotions",
+      "title": "Don't Ask My Neighbors",
+      "year": "1977"
+    },
+    {
+      "type": "chapter",
+      "start": 979,
+      "title": "On Earth, Wind & Fire"
+    },
+    {
+      "type": "track",
+      "start": 1004,
+      "artist": "Earth, Wind & Fire",
+      "title": "Love's Holiday",
+      "year": "1977"
+    },
+    {
+      "type": "chapter",
+      "start": 1255,
+      "title": "On Patrice Rushen"
+    },
+    {
+      "type": "track",
+      "start": 1270,
+      "artist": "Patrice Rushen",
+      "title": "Hang It Up",
+      "year": "1978"
+    },
+    {
+      "type": "chapter",
+      "start": 1567,
+      "title": "On The Love Unlimited Orchestra"
+    },
+    {
+      "type": "track",
+      "start": 1572,
+      "artist": "The Love Unlimited Orchestra",
+      "title": "Midnight Groove (Single Version)",
+      "year": "1975"
+    },
+    {
+      "type": "chapter",
+      "start": 1820,
+      "title": "On Shalamar"
+    },
+    {
+      "type": "track",
+      "start": 1847,
+      "artist": "Shalamar",
+      "title": "Make That Move",
+      "year": "1980"
+    },
+    {
+      "type": "chapter",
+      "start": 2207,
+      "title": "On Carrie Lucas"
+    },
+    {
+      "type": "track",
+      "start": 2213,
+      "artist": "Carrie Lucas",
+      "title": "Rockin' For Your Love",
+      "year": "1982"
+    },
+    {
+      "type": "chapter",
+      "start": 2546,
+      "title": "On George Benson"
+    },
+    {
+      "type": "track",
+      "start": 2564,
+      "artist": "George Benson",
+      "title": "Give Me the Night",
+      "year": "1980"
+    },
+    {
+      "type": "chapter",
+      "start": 2775,
+      "title": "On Leon Ware"
+    },
+    {
+      "type": "track",
+      "start": 2784,
+      "artist": "Leon Ware",
+      "title": "Rockin'  You Eternally",
+      "year": "1981"
+    },
+    {
+      "type": "chapter",
+      "start": 3024,
+      "title": "On Quincy Jones"
+    },
+    {
+      "type": "track",
+      "start": 3029,
+      "artist": "Quincy Jones",
+      "title": "Betcha Wouldn't Hurt Me (Extended Version)",
+      "year": "1981"
+    },
+    {
+      "type": "chapter",
+      "start": 3226,
+      "title": "On The Temptations"
+    },
+    {
+      "type": "track",
+      "start": 3250,
+      "artist": "The Temptations",
+      "title": "I'll Keep My Light In My Window",
+      "year": "1984"
+    }
+  ]
+}
