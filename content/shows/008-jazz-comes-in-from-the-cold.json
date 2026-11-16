@@ -1,0 +1,184 @@
+{
+  "number": "008",
+  "slug": "jazz-comes-in-from-the-cold",
+  "title": "Jazz Comes in from the Cold",
+  "subtitle": "Jazz-funk and Soul, 1973–1981",
+  "date": "2026-11-16",
+  "publish_at": "2026-11-16T20:00:00Z",
+  "duration": "57 min",
+  "artists": [
+    "Norman Connors",
+    "Roy Ayers",
+    "Phyllis Hyman",
+    "Grover Washington, Jr."
+  ],
+  "tags": [
+    "jazz-funk",
+    "soul-jazz",
+    "soul",
+    "funk",
+    "rb"
+  ],
+  "mixcloud_key": "jazz-comes-in-from-the-cold",
+  "teaser": "The jazz musicians who traded the concert hall for the dancefloor — Norman Connors to Grover Washington, an hour of crossings that stuck.",
+  "description": "This one is about the musicians who could play anything and chose to play for the heart and the hips. Norman Connors behind a kit that opened into something warmer. Donny Hathaway at the electric piano, Howard and the church talking to each other in every chord. Michael Henderson stepping away from Miles Davis's bass line and up to the microphone.\n\nMid-show, a question about where to start with Roy Ayers. The vibraphone holds you the way a warm light left on in a window does. My answer is Everybody Loves the Sunshine.\n\nThe second half follows the thread outward: Roy as producer, Miles sidemen producing Phyllis Hyman, George Benson walking jazz guitar onto the dancefloor, and finally Grover Washington with Grady Tate — a jazz drummer closing the circle.\n\n— Simone",
+  "quote": "The vibraphone is one of those instruments that shouldn't work the way it does. It's percussion — metal bars and spinning resonators — but in Roy Ayers' hands it sounds like something between a voice and a warm light left on in a window.",
+  "home_quote": {
+    "text": "Jazz finesse and dancefloor pull, *sitting together without a word of argument between them.*",
+    "context": "On George Benson, Off Broadway"
+  },
+  "tracklist": [
+    {
+      "type": "track",
+      "start": 0,
+      "artist": "Norman Connors",
+      "title": "Once I've Been There",
+      "year": "1977"
+    },
+    {
+      "type": "chapter",
+      "start": 325,
+      "title": "On Donny Hathaway"
+    },
+    {
+      "type": "track",
+      "start": 330,
+      "artist": "Donny Hathaway",
+      "title": "Valdez In the Country",
+      "year": "1973"
+    },
+    {
+      "type": "chapter",
+      "start": 531,
+      "title": "On Eddie Harris"
+    },
+    {
+      "type": "track",
+      "start": 536,
+      "artist": "Eddie Harris",
+      "title": "It's All Right Now",
+      "year": "1976"
+    },
+    {
+      "type": "chapter",
+      "start": 757,
+      "title": "On Ramsey Lewis"
+    },
+    {
+      "type": "track",
+      "start": 764,
+      "artist": "Ramsey Lewis",
+      "title": "Spring High",
+      "year": "1977",
+      "year_edited": true
+    },
+    {
+      "type": "chapter",
+      "start": 967,
+      "title": "On Michael Henderson"
+    },
+    {
+      "type": "track",
+      "start": 980,
+      "artist": "Michael Henderson",
+      "title": "In The Night-Time",
+      "year": "1978"
+    },
+    {
+      "type": "chapter",
+      "start": 1261,
+      "title": "On Side Effect"
+    },
+    {
+      "type": "track",
+      "start": 1274,
+      "artist": "Side Effect",
+      "title": "Always There (Special 12\" disco MIX)",
+      "year": "1976"
+    },
+    {
+      "type": "chapter",
+      "start": 1569,
+      "title": "Notes from the lounge"
+    },
+    {
+      "type": "track",
+      "start": 1574,
+      "artist": "The Love Unlimited Orchestra",
+      "title": "Midnight Groove (Single Version)",
+      "year": "1975"
+    },
+    {
+      "type": "chapter",
+      "start": 1803,
+      "title": "On Roy Ayers"
+    },
+    {
+      "type": "track",
+      "start": 1835,
+      "artist": "Roy Ayers",
+      "title": "Everybody Loves the Sunshine",
+      "year": "1976"
+    },
+    {
+      "type": "chapter",
+      "start": 2049,
+      "title": "On Sylvia Striplin"
+    },
+    {
+      "type": "track",
+      "start": 2078,
+      "artist": "Sylvia Striplin",
+      "title": "Give Me Your Love (7\" Mix)",
+      "year": "1981"
+    },
+    {
+      "type": "chapter",
+      "start": 2340,
+      "title": "On Phyllis Hyman"
+    },
+    {
+      "type": "track",
+      "start": 2357,
+      "artist": "Phyllis Hyman",
+      "title": "Under Your Spell",
+      "year": "1979"
+    },
+    {
+      "type": "chapter",
+      "start": 2613,
+      "title": "On George Benson"
+    },
+    {
+      "type": "track",
+      "start": 2618,
+      "artist": "George Benson",
+      "title": "Off Broadway",
+      "year": "1980"
+    },
+    {
+      "type": "chapter",
+      "start": 2927,
+      "title": "On The Blackbyrds"
+    },
+    {
+      "type": "track",
+      "start": 2955,
+      "artist": "The Blackbyrds",
+      "title": "Walking In Rhythm",
+      "year": "1974"
+    },
+    {
+      "type": "chapter",
+      "start": 3181,
+      "title": "On Grover Washington, Jr."
+    },
+    {
+      "type": "track",
+      "start": 3222,
+      "artist": "Grover Washington, Jr.",
+      "title": "Be Mine (Tonight) [Edit] [feat. Grady Tate]",
+      "year": "1981"
+    }
+  ]
+}
