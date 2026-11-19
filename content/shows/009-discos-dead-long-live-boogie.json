@@ -1,0 +1,159 @@
+{
+  "number": "009",
+  "slug": "discos-dead-long-live-boogie",
+  "title": "Disco's Dead, Long Live Boogie",
+  "subtitle": "New York Soul & Boogie, 1979–1985",
+  "date": "2026-11-20",
+  "publish_at": "2026-11-20T20:00:00Z",
+  "duration": "63 min",
+  "artists": [
+    "Sharon Redd",
+    "Sinnamon",
+    "Unlimited Touch",
+    "Melba Moore"
+  ],
+  "tags": [
+    "soul",
+    "disco",
+    "boogie",
+    "rb",
+    "old-school"
+  ],
+  "mixcloud_key": "discos-dead-long-live-boogie",
+  "teaser": "Disco was declared dead in the summer of 1979. Nobody told the people still making records in New York — and this is what they made instead.",
+  "description": "Summer 1979, and America decided disco was finished. In New York, the small independent labels kept going anyway — Prelude on West 57th Street, Salsoul, Becket, Pavillion — stripping out the big strings, letting the bass and the synthesisers take more room, and handing the records to the mixers who understood the dancefloor better than anyone.\n\nThis show moves from Black Ivory in Harlem through the Prelude years — Sharon Redd, Unlimited Touch — into the Kashif world of Melba Moore and Howard Johnson, through Shep Pettibone's hypnotic work with Sinnamon, and out the other side with Patrick Adams closing the era in 1985.\n\nSix years of music from the city that never stopped dancing, even when it was supposed to be mourning.\n\n— Simone",
+  "quote": "Grief is easier when your feet are moving.",
+  "home_quote": {
+    "text": "The smallest offices *owned the dancefloor that year.*",
+    "context": "On Fantasy, You're Too Late"
+  },
+  "tracklist": [
+    {
+      "type": "track",
+      "start": 0,
+      "artist": "Black Ivory",
+      "title": "Mainline",
+      "year": "1979"
+    },
+    {
+      "type": "chapter",
+      "start": 406,
+      "title": "On Unlimited Touch"
+    },
+    {
+      "type": "track",
+      "start": 411,
+      "artist": "Unlimited Touch",
+      "title": "Searching to Find the One",
+      "year": "1981"
+    },
+    {
+      "type": "chapter",
+      "start": 713,
+      "title": "On Sharon Redd"
+    },
+    {
+      "type": "track",
+      "start": 718,
+      "artist": "Sharon Redd",
+      "title": "Can You Handle It",
+      "year": "1980"
+    },
+    {
+      "type": "chapter",
+      "start": 1093,
+      "title": "On Skyy"
+    },
+    {
+      "type": "track",
+      "start": 1098,
+      "artist": "Skyy",
+      "title": "Show Me the Way",
+      "year": "1983"
+    },
+    {
+      "type": "chapter",
+      "start": 1397,
+      "title": "On Melba Moore"
+    },
+    {
+      "type": "track",
+      "start": 1402,
+      "artist": "Melba Moore",
+      "title": "Love's Comin at Ya",
+      "year": "1982"
+    },
+    {
+      "type": "chapter",
+      "start": 1727,
+      "title": "Notes from the lounge"
+    },
+    {
+      "type": "track",
+      "start": 1732,
+      "artist": "The Love Unlimited Orchestra",
+      "title": "Midnight Groove (Single Version)",
+      "year": "1975"
+    },
+    {
+      "type": "chapter",
+      "start": 1965,
+      "title": "On Bobby Womack"
+    },
+    {
+      "type": "track",
+      "start": 2021,
+      "artist": "Bobby Womack",
+      "title": "Trust Your Heart (12\" Extended)",
+      "year": "1978"
+    },
+    {
+      "type": "chapter",
+      "start": 2325,
+      "title": "On Howard Johnson"
+    },
+    {
+      "type": "track",
+      "start": 2339,
+      "artist": "Howard Johnson",
+      "title": "Say You Wanna",
+      "year": "1982"
+    },
+    {
+      "type": "chapter",
+      "start": 2603,
+      "title": "On Sinnamon"
+    },
+    {
+      "type": "track",
+      "start": 2630,
+      "artist": "Sinnamon",
+      "title": "Thanks to You",
+      "year": "1982"
+    },
+    {
+      "type": "chapter",
+      "start": 3028,
+      "title": "On Fantasy"
+    },
+    {
+      "type": "track",
+      "start": 3033,
+      "artist": "Fantasy",
+      "title": "You're Too Late",
+      "year": "1981"
+    },
+    {
+      "type": "chapter",
+      "start": 3412,
+      "title": "On Skipworth & Turner"
+    },
+    {
+      "type": "track",
+      "start": 3417,
+      "artist": "Skipworth & Turner",
+      "title": "Thinking About Your Love (Original 12 Inch Version)",
+      "year": "1985"
+    }
+  ]
+}
