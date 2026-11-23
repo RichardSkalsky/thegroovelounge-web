@@ -1,0 +1,183 @@
+{
+  "number": "010",
+  "slug": "the-ones-we-keep",
+  "title": "The Ones We Keep",
+  "subtitle": "Soul & R&B — 1973–1982",
+  "date": "2026-11-23",
+  "publish_at": "2026-11-23T20:00:00Z",
+  "duration": "64 min",
+  "artists": [
+    "Heatwave",
+    "Ashford & Simpson",
+    "The O'Jays",
+    "Rockie Robbins"
+  ],
+  "tags": [
+    "soul",
+    "rb",
+    "oldies",
+    "old-school",
+    "neo-soul"
+  ],
+  "mixcloud_key": "the-ones-we-keep",
+  "teaser": "From the first flutter to the long, quiet devotion — twelve soul records about the kind of love that stays.",
+  "description": "Tonight we follow love all the way through. Five acts, one story — the first realisation, the promise, the vow, the difficulty, and the love that comes out the other side heavier and steadier than it began.\n\nA listener called Loretta wrote in from Baltimore to ask what it is about a soul song that makes two people choose it for the rest of their lives. She and her husband Walter had their first dance to Always and Forever in 1979. I've been thinking about that question all week.\n\nThe honest answer is that couples don't choose a song so much as a song chooses them. The best soul records about love aren't just pretty — they're patient. They make room. And that's what tonight is about.\n\n— Simone",
+  "quote": "I don't think couples choose a song so much as a song chooses them. It catches them at the right moment, in the right room, when something in the words or the melody says the thing they couldn't quite say themselves.",
+  "home_quote": {
+    "text": "The best soul records about love aren't just pretty — *they're patient. They make room for the other person.*",
+    "context": "On Heatwave, Always and Forever"
+  },
+  "tracklist": [
+    {
+      "type": "track",
+      "start": 0,
+      "artist": "Zoom",
+      "title": "Love Seasons",
+      "year": "1981"
+    },
+    {
+      "type": "chapter",
+      "start": 371,
+      "title": "On Alton McClain & Destiny"
+    },
+    {
+      "type": "track",
+      "start": 376,
+      "artist": "Alton McClain & Destiny",
+      "title": "It Must Be Love",
+      "year": "1979"
+    },
+    {
+      "type": "chapter",
+      "start": 644,
+      "title": "On Deniece Williams"
+    },
+    {
+      "type": "track",
+      "start": 660,
+      "artist": "Deniece Williams",
+      "title": "Baby, Baby My Love's All for You (Single Version)",
+      "year": "1977"
+    },
+    {
+      "type": "chapter",
+      "start": 882,
+      "title": "On The Ebonys"
+    },
+    {
+      "type": "track",
+      "start": 894,
+      "artist": "The Ebonys",
+      "title": "It's Forever (Single Version)",
+      "year": "1973"
+    },
+    {
+      "type": "chapter",
+      "start": 1148,
+      "title": "On First Choice"
+    },
+    {
+      "type": "track",
+      "start": 1162,
+      "artist": "First Choice",
+      "title": "Let No Man Put Asunder",
+      "year": "1977"
+    },
+    {
+      "type": "chapter",
+      "start": 1416,
+      "title": "Notes from the lounge"
+    },
+    {
+      "type": "track",
+      "start": 1421,
+      "artist": "The Love Unlimited Orchestra",
+      "title": "Midnight Groove (Single Version)",
+      "year": "1975"
+    },
+    {
+      "type": "chapter",
+      "start": 1630,
+      "title": "On Heatwave"
+    },
+    {
+      "type": "track",
+      "start": 1692,
+      "artist": "Heatwave",
+      "title": "Always and Forever",
+      "year": "1976"
+    },
+    {
+      "type": "chapter",
+      "start": 2053,
+      "title": "On Johnny Bristol"
+    },
+    {
+      "type": "track",
+      "start": 2070,
+      "artist": "Johnny Bristol",
+      "title": "Hang On In There Baby",
+      "year": "1974"
+    },
+    {
+      "type": "chapter",
+      "start": 2292,
+      "title": "On L.T.D."
+    },
+    {
+      "type": "track",
+      "start": 2334,
+      "artist": "L.T.D.",
+      "title": "Holding On (When Love Is Gone)",
+      "year": "1978"
+    },
+    {
+      "type": "chapter",
+      "start": 2557,
+      "title": "On Bloodstone"
+    },
+    {
+      "type": "track",
+      "start": 2566,
+      "artist": "Bloodstone",
+      "title": "My Love Grows Stronger",
+      "year": "1982"
+    },
+    {
+      "type": "chapter",
+      "start": 2926,
+      "title": "On Ashford & Simpson"
+    },
+    {
+      "type": "track",
+      "start": 2959,
+      "artist": "Ashford & Simpson",
+      "title": "It Seems To Hang On",
+      "year": "1978"
+    },
+    {
+      "type": "chapter",
+      "start": 3257,
+      "title": "On The O'Jays"
+    },
+    {
+      "type": "track",
+      "start": 3282,
+      "artist": "The O'Jays",
+      "title": "Darlin' Darlin' Baby (Sweet, Tender, Love)",
+      "year": "1976"
+    },
+    {
+      "type": "chapter",
+      "start": 3527,
+      "title": "On Rockie Robbins"
+    },
+    {
+      "type": "track",
+      "start": 3532,
+      "artist": "Rockie Robbins",
+      "title": "You and Me",
+      "year": "1980"
+    }
+  ]
+}
